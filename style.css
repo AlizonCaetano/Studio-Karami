@@ -226,3 +226,10 @@ svg.logo {
 iframe{
     width: 100%;
 }
+
+
+@media(max-width: 380){
+    svg.logo {
+        margin: 17rem 5rem 0rem 3rem;
+    }
+}
