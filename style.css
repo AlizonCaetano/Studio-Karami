@@ -38,13 +38,13 @@ span.icon-menu{
 #menu-mobile span{
     display: block;
     position: absolute;
-    right: 3rem;
-    top: 4rem;
+    right: 1.5rem;
+    top: 3.5rem;
     height: 3px;
     background-color: #222;
     width: 3rem;
     cursor: pointer;
-    border-radius: 30%;
+    border-radius: 25%;
 }
 
 #menu-mobile span::before, #menu-mobile span::after{
@@ -53,7 +53,7 @@ span.icon-menu{
     width: 3rem;
     display: block;
     background: #222;
-    border-radius: 30%;
+    border-radius: 25%;
 }
 
 #menu-mobile span::before{
@@ -66,9 +66,13 @@ span.icon-menu{
 }
 
 
+#menu-mobile svg {
+    margin-top: 2rem;
+    padding-right: 4rem;
+}
+
 .brand {
     background-image: url(./assets/bg-img.png);
-    background-attachment: fixed;
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -86,10 +90,6 @@ span.icon-menu{
     padding: 1.8rem;
 
     width: 100%;
-}
-
-svg.logo {
-    margin: 17rem 11rem 0rem 3rem;
 }
 
 .about-us, .contact, a.projects{
@@ -131,20 +131,30 @@ svg.logo {
     margin: 8px;
 }
 
+
 .about-us,
 .contact{
     color: var(--txt-clr);
 }
 
-.projects{
+.projects-wrapper{
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    padding: 2rem 1rem;
     justify-content: center;
-
+    
     gap: 10px;
+}
 
+h3.projects{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    
+    padding: 2rem 1rem;
+    font-size: 4rem;
+    font-family: 'JetBrains Mono', sans-serif;
+    color: var(--base-clr);
 }
 
 #about-us, .projects{
@@ -223,13 +233,12 @@ svg.logo {
     color: #111;
 }
 
+#contact h4{
+    text-align: center;
+    font-size: 2rem;
+}
+
 iframe{
     width: 100%;
 }
 
-
-@media(max-width: 380){
-    svg.logo {
-        margin: 17rem 5rem 0rem 3rem;
-    }
-}
